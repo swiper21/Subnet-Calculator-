@@ -1,5 +1,9 @@
+# Subnet Calculator · Live Demo
+link - https://swiper21.github.io/Subnet-Calculator-/
+
 # Subnet Calculator
 A simple IPv4 subnetting calculator to help compute network address, broadcast address, usable host range and more.
+Java Script 
 
 ## Usage
 1. Enter an IPv4 address (e.g., 192.168.1.42).
