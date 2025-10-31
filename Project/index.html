@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPv4 Subnet Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Subnet Calculator</h1>
+
+    <section class="input-section">
+      <div class="input-row top-inputs">
+        <div class="col">
+          <label for="ip">IP Address</label>
+          <input id="ip" type="text" placeholder="192.168.1.0" />
+        </div>
+        <div class="col">
+          <label for="cidr">CIDR</label>
+          <input id="cidr" type="number" placeholder="24" min="0" max="32" />
+        </div>
+      </div>
+      <button id="calcBtn">Calculate</button>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="results">
+      <div class="row">
+        <div class="col">
+          <label>Network Address</label>
+          <input id="network" class="result-field" readonly />
+        </div>
+        <div class="col">
+          <label>Broadcast Address</label>
+          <input id="broadcast" class="result-field" readonly />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Type</label>
+          <input id="type" class="result-field" readonly />
+        </div>
+        <div class="col">
+          <label>Decimal Subnet Mask</label>
+          <input id="mask-decimal" class="result-field" readonly />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Usable Hosts</label>
+          <input id="hosts" class="result-field" readonly />
+        </div>
+        <div class="col">
+          <label>Address Class</label>
+          <input id="class" class="result-field" readonly />
+        </div>
+      </div>
+
+      <div class="row full">
+        <label>Host Range</label>
+        <input id="range" class="result-field" readonly />
+      </div>
+
+      <div class="row full">
+        <label>Binary Subnet Mask</label>
+        <input id="mask-binary" class="result-field" readonly />
+      </div>
+    </section>
+
+    <div id="error" role="alert"></div>
+    <footer class="signature">@maxsafranov</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
